@@ -1,0 +1,19 @@
+@import "compass/reset";
+
+
+$bodyColor: darkgray;
+
+$border-radius: 5px;
+
+
+@mixin b-radius{
+    border-radius: $border-radius;
+}
+
+body{ 
+    background-color: $bodyColor;
+}
+
+.img {
+    @include b-radius;
+}
